@@ -1,0 +1,120 @@
+body{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.image img{
+    width: 100%;
+    background-color:black;
+   
+}
+/* .image img:hover{
+   
+} */
+
+.image{
+    transform-style: preserve-3d;
+    position: relative;
+    transition: 0.5s;
+   
+     overflow: hidden;
+    perspective: 100%;
+
+}
+
+.image:hover {
+    transform: rotateY(25deg);
+    transform: rotateY(-25deg);
+    opacity: 1;
+    z-index: 1;
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+    
+  }
+
+  
+.pos{
+    position: absolute;
+   top: 14%;
+    left:35%;
+    font-size: 200%;
+   color:#f1f1f1;
+   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.image{
+    position: relative;
+    text-align: center;
+}
+ .heroSection{
+    background-color: black;
+    color: aliceblue;
+    height: 100px;
+display: flex;
+
+align-items:  center;
+justify-content: center;
+font-size: x-large;
+}
+
+.card{
+    width: 25%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 2%;
+    transition: transform 0.5s;
+
+
+}
+.container{
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  
+  
+ 
+}
+.card img{
+    width: 100%;
+}
+
+#cardContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  
+ 
+}
+
+.card:focus,
+.card:focus-within,
+.card:hover {
+  transform: rotateY(360deg);
+}
+
+
+
+
+.about{
+display: flex;
+width: 100%;
+justify-content: center;
+gap: 10px;
+
+}
+
+.about p{
+   
+    padding: 16px;
+    text-align: center;
+    color: #f1f1f1;
+}
+.about h3{
+    text-align: center; color: #f1f1f1;
+    text-shadow: 2px 2px 4px;
+}
+
+.about div{
+    background-color: #9B2335;
+width:40%;
+margin-top: 2%;
+border-radius: 10px;
+border: 1px solid black;
+}
